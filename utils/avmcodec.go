@@ -6,12 +6,12 @@ package utils
 import (
 	"errors"
 
-	"github.com/ava-labs/avalanchego/codec"
-	"github.com/ava-labs/avalanchego/genesis"
-	"github.com/ava-labs/avalanchego/vms/avm"
-	"github.com/ava-labs/avalanchego/vms/nftfx"
-	"github.com/ava-labs/avalanchego/vms/platformvm"
-	"github.com/ava-labs/avalanchego/vms/secp256k1fx"
+	"github.com/lasthyphen/avalanchego-1.4.11/codec"
+	"github.com/lasthyphen/avalanchego-1.4.11/genesis"
+	"github.com/lasthyphen/avalanchego-1.4.11/vms/avm"
+	"github.com/lasthyphen/avalanchego-1.4.11/vms/nftfx"
+	"github.com/lasthyphen/avalanchego-1.4.11/vms/platformvm"
+	"github.com/lasthyphen/avalanchego-1.4.11/vms/secp256k1fx"
 )
 
 var (

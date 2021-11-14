@@ -164,7 +164,7 @@ Update [config](https://github.com/ava-labs/ortelius/blob/master/docker/config.j
 
 The full Ortelius pipeline requires the following services. This guide will not cover their installation but will discuss key configuration settings.
 
-- **[Avalanche.go](https://github.com/ava-labs/avalanchego)** is the gateway to the Avalanche network
+- **[Avalanche.go](https://github.com/lasthyphen/avalanchego-1.4.11)** is the gateway to the Avalanche network
 - **[MySQL](https://www.mysql.com/)** powers the index
 
 ## Configuring services

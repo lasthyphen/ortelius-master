@@ -7,7 +7,7 @@ import (
 	"errors"
 	"strings"
 
-	"github.com/ava-labs/avalanchego/utils/logging"
+	"github.com/lasthyphen/avalanchego-1.4.11/utils/logging"
 )
 
 const appName = "ortelius"

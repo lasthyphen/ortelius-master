@@ -7,7 +7,7 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/ava-labs/avalanchego/utils/wrappers"
+	"github.com/lasthyphen/avalanchego-1.4.11/utils/wrappers"
 	"github.com/ava-labs/ortelius/cfg"
 )
 

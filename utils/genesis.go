@@ -4,10 +4,10 @@
 package utils
 
 import (
-	"github.com/ava-labs/avalanchego/genesis"
-	"github.com/ava-labs/avalanchego/ids"
-	avmVM "github.com/ava-labs/avalanchego/vms/avm"
-	"github.com/ava-labs/avalanchego/vms/platformvm"
+	"github.com/lasthyphen/avalanchego-1.4.11/genesis"
+	"github.com/lasthyphen/avalanchego-1.4.11/ids"
+	avmVM "github.com/lasthyphen/avalanchego-1.4.11/vms/avm"
+	"github.com/lasthyphen/avalanchego-1.4.11/vms/platformvm"
 )
 
 type GenesisContainer struct {
