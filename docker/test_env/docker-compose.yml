@@ -1,0 +1,27 @@
+version: '3.5'
+volumes:
+  mysql-data:
+services:
+  mysql:
+    image: mysql:8.0.26
+    volumes:
+      - mysql-data:/var/lib/mysql
+    restart: always
+    ports:
+      - "3306:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: password
+      MYSQL_DATABASE: ortelius_test
+  migrate:
+    image: migrate/migrate:v4.14.1
+    volumes:
+      - ../../services/db/migrations:/migrations
+      - ./migrate.sh:/migrate.sh
+    restart: "no"
+    depends_on:
+      - mysql
+    entrypoint: ["/bin/sh"]
+    command: |
+      -c 'while ! migrate -path=/migrations/ -database "mysql://root:password@tcp(mysql:3306)/ortelius_test" up; do
+        sleep 1
+      done'
